@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="calculator">
+        <section class="calculator-header"><a class="back-link" href="../index.html">← All assignments</a>
+            <p class="label">JAVASCRIPT TOOL</p>
+            <h1>Simple Calculator</h1>
+            <p class="description">
+                Enter two numbers and choose an operation.
+            </p>
+        </section>
+
+        <section class="calculator-body">
+
+            <div class="input-group">
+                <label for="firstNumber">First Number</label>
+                <input
+                    type="number"
+                    id="firstNumber"
+                    placeholder="Enter a number"
+                >
+            </div>
+
+            <div class="operation-row">
+                <div class="input-group">
+                    <label for="operation">Operation</label>
+                    <select id="operation">
+                        <option value="add">Addition (+)</option>
+                        <option value="subtract">Subtraction (-)</option>
+                        <option value="multiply">Multiplication (×)</option>
+                        <option value="divide">Division (÷)</option>
+                    </select>
+                </div>
+
+                <div class="operator-symbol" aria-hidden="true">
+                    →
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="secondNumber">Second Number</label>
+                <input
+                    type="number"
+                    id="secondNumber"
+                    placeholder="Enter a number"
+                >
+            </div>
+
+            <div class="actions">
+                <button id="calculateButton" class="calculate-button">
+                    Calculate
+                </button>
+
+                <button id="resetButton" class="reset-button">
+                    Reset
+                </button>
+            </div>
+
+            <div class="result-box">
+                <span class="result-label">RESULT</span>
+                <p id="result">Your answer will appear here</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

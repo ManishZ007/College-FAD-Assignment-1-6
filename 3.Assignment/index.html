@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="form-page"><a class="back-link" href="../index.html">← All assignments</a>
+
+        <section class="form-intro">
+            <p class="eyebrow">ACCOUNT SETUP</p>
+
+            <h1>Create your account.</h1>
+
+            <p>
+                Enter your details below to create a new account.
+                All fields are required.
+            </p>
+        </section>
+
+
+        <section class="form-container">
+
+            <form id="registrationForm">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                    >
+
+                    <small id="nameError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                    <small id="emailError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="text"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                    >
+
+                    <small id="phoneError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                    >
+
+                    <small id="passwordError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Re-enter your password"
+                    >
+
+                    <small id="confirmPasswordError" class="error-message"></small>
+                </div>
+
+
+                <button type="submit" id="submitButton">
+                    Create Account
+                </button>
+
+                <p id="successMessage" class="success-message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
